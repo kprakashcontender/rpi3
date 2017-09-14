@@ -7,51 +7,39 @@
     <div>
         <table>
             <tr>
+                {% for i in range(1,4) %}
                 <td>
-                    <img src="static\images\shailaputri_durga_1.jpg" height="400" width="300">
+                    <img src="static\images\{{ goddess_images[i] }}" height="500" width="400">
                     </br>
-                    <form action="/DurgaInterface/shailaputri">
-                        <center><button type="submit">SHAILAPUTRI</button></center>
+                    <form action="/DurgaInterface/{{ goddess_names[i] }}">
+                        <center><button type="submit">{{ goddess_names[i] }}</button></center>
                     </form>
                 </td>
-                <td>
-                    <img src="static\images\brahmacharini_durga_2.jpg" height="400" width="300">
-                    </br><center><button>BRAHMACHARINI</button></center>
-                </td>
-                <td>
-                    <img src="static\images\chandraghanta_durga_3.jpg" height="400" width="300">
-                    </br><center><button>CHANDRAGHANTA</button></center>
-                </td>
+                {% endfor %}
             </tr>
             </br>
             <tr>
+                {% for i in range(4,7) %}
                 <td>
-                    <img src="static\images\kushmanda_durga4.jpg" height="400" width="300">
-                    </br><center><button>KUSHMANDA</button></center>
+                    <img src="static\images\{{ goddess_images[i] }}" height="500" width="400">
+                    </br>
+                    <form action="/DurgaInterface/{{ goddess_names[i] }}">
+                        <center><button type="submit">{{ goddess_names[i] }}</button></center>
+                    </form>
                 </td>
-                <td>
-                    <img src="static\images\skandamata_durga_5.jpg" height="400" width="300">
-                    </br><center><button>SKANDAMATA</button></center>
-                </td>
-                <td>
-                    <img src="static\images\katyayani_durga_6.jpg" height="400" width="300">
-                    </br><center><button>KATYAYANI</button></center>
-                </td>
+                {% endfor %}
             </tr>
             </br>
             <tr>
+                {% for i in range(7,10) %}
                 <td>
-                    <img src="static\images\kalaratri_durga_7.jpg" height="400" width="300">
-                    </br><center><button>KALARATRI</button></center>
+                    <img src="static\images\{{ goddess_images[i] }}" height="500" width="400">
+                    </br>
+                    <form action="/DurgaInterface/{{ goddess_names[i] }}">
+                        <center><button type="submit">{{ goddess_names[i] }}</button></center>
+                    </form>
                 </td>
-                <td>
-                    <img src="static\images\mahagauri_durga_8.jpg" height="400" width="300">
-                    </br><center><button>MAHAGAURI</button></center>
-                </td>
-                <td>
-                    <img src="static\images\siddhidatri_durga_9.jpg" height="400" width="300">
-                    </br><center><button>SIDDHIDATRI</button></center>
-                </td>
+                {% endfor %}
             </tr>
         </table>
     </div>
