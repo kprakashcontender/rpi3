@@ -3,6 +3,7 @@ import RPi.GPIO as GPIO
 ON = False
 OFF = True
 mode = GPIO.BCM
+GPIO.setmode(mode)
 
 
 def pin_setup_for_output(pin_numbers):
