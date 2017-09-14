@@ -21,3 +21,14 @@ durga_names_to_music = {1: "durga1.mp3",
                         7: "durga7.mp3",
                         8: "durga8.mp3",
                         9: "durga9.mp3"}
+
+durga_names_to_color = {1: {"color": "R", "pin": [4]},
+                        2: {"color": "G", "pin": [18]},
+                        3: {"color": "B", "pin": [25]},
+                        4: {"color": "RG", "pin": [23, 24]},
+                        5: {"color": "RB", "pin": [6, 13]},
+                        6: {"color": "GB", "pin": [19, 26]},
+                        7: {"color": "RGB", "pin": [16, 20, 21]},
+                        8: {"color": "RGB", "pin": [17, 27, 22]},
+                        9: {"color": "RG", "pin": [5, 12]}}
+

@@ -14,13 +14,18 @@ def durga_interface():
 
 @app.route("/DurgaInterface/<goddess_name>/")
 def perform(goddess_name):
+
+    music_file = get_music_file()
+    template_data = {'goddess_name': goddess_name.upper(), "music_file": music_file}
+    return render_template("playing_song.html", **template_data)
+
+
+def get_music_file(goddess_name):
     # Get Name of the Music File
     for key, value in goddess_info.durga_names.iteritems():
         if value.upper() == goddess_name.upper():
             music_file = goddess_info.durga_names_to_music[key]
-
-    template_data = {'goddess_name': goddess_name.upper(), "music_file": music_file}
-    return render_template("playing_song.html", **template_data)
+    return music_file
 
 
 if __name__ == "__main__":
